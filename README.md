@@ -8,7 +8,7 @@
 
 # :rocket: Sobre o desafio
 
-[Nesse desafio](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-database-relations), criarei uma nova aplicação para demonstraro que você aprendi Node.js junto ao TypeScript, incluindo o uso de banco de dados com o TypeORM, e relacionamentos ManyToMany com PostgreSQL, MongoDB e Redis.
+[Nesse desafio](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-database-relations), criarei uma nova aplicação para demonstrar o que aprendi em Node.js junto ao TypeScript, incluindo o uso de banco de dados com o TypeORM, e relacionamentos ManyToMany com PostgreSQL, MongoDB e Redis.
 
 Essa será uma aplicação que deve permitir a criação de clientes, produtos e pedidos, onde o cliente pode gerar novos pedidos de compra de certos produtos, como um pequeno e-commerce.
 
@@ -37,7 +37,7 @@ Ter Docker e as imagens PostgreSQL, MongoDB e Redis instalados.
 
 ### Instalar PostgreSQL via Docker
 
-* `docker run --name storeChallengePostgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres`
+* `docker run --name ecommerceChallengePostgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres`
 * Verificar se a imagem está rodando: `docker ps`
 * Usuário: postgres
 * Senha: docker
@@ -52,7 +52,7 @@ Ter Docker e as imagens PostgreSQL, MongoDB e Redis instalados.
 
 ### Instalar MongoDB via Docker
 
-* `docker run --name ecommerceChallengeMongo -p 27017:27017 -d -t mong
+* `docker run --name ecommerceChallengeMongo -p 27017:27017 -d -t mongo`
 * Verificar se a imagem está rodando: `docker ps`
 * Usuário: postgres
 * Senha: docker
@@ -60,7 +60,7 @@ Ter Docker e as imagens PostgreSQL, MongoDB e Redis instalados.
 
 ### Instalar Redis via Docker
 
-* `docker run --name ecommerceChallengeRedis -p 6379:6379 -d -t redis:alpine
+* `docker run --name ecommerceChallengeRedis -p 6379:6379 -d -t redis:alpine`
 * Verificar se a imagem está rodando: `docker ps
 
 ## Como rodar a aplicação
@@ -80,18 +80,14 @@ yarn test
 Resultados obtidos pelo [Insomnia](https://insomnia.rest/download/) um software para interação com o backend (API) via HTTP e JSON.
 
 ### Criar clientes
- 
+
 <img src=""/>
 
 ### Criar produtos
- 
-Lista as transações e informa o balanço:
 
 <img src=""/>
 
 ### Listar produtos
-
-Lista as transações e informa o balanço:
 
 <img src=""/>
 
