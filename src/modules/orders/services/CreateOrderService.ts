@@ -48,13 +48,19 @@ class CreateOrderService {
       throw new AppError('One or more products was not found');
     }
 
+    /** Variável que é um array (matriz) contendo as variáveis da interface */
     const updatedQuantities: IUpdateProductsQuantityDTO[] = [];
 
+    /** Recebe os produtos na variável "products", que é um array que recebe vários
+     * produtos.
+     */
     const updatedProducts = findProducts.map(findProduct => {
+      /** Variável que recebe um array com os produtos de mesmo id da requisição. */
       const orderProduct = products.find(
         product => product.id === findProduct.id,
       );
 
+      /** Verificação de quantidades em estoque */
       if (orderProduct) {
         if (findProduct.quantity < orderProduct.quantity) {
           throw new AppError(
@@ -65,11 +71,13 @@ class CreateOrderService {
           );
         }
 
+        /** Tendo as quantidades, executa a operação de update das quantidades. */
         updatedQuantities.push({
           id: orderProduct.id,
           quantity: findProduct.quantity - orderProduct.quantity,
         });
 
+        /** Retorna todos os produtos e suas quantidades atualizadas */
         return {
           ...findProduct,
           quantity: orderProduct.quantity,
@@ -79,8 +87,10 @@ class CreateOrderService {
       return findProduct;
     });
 
+    /** Atualiza a quantidade de produtos por id no BD */
     await this.productsRepository.updateQuantity(updatedQuantities);
 
+    /** Cria a ordem contendo o id do consumidor e os produtos adicionados */
     const order = await this.ordersRepository.create({
       customer: customerExist,
       products: updatedProducts.map(product => ({
