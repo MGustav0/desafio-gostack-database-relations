@@ -81,17 +81,25 @@ Resultados obtidos pelo [Insomnia](https://insomnia.rest/download/) um software 
 
 ### Criar clientes
 
+> Cria-se o usuário passando o nome e email no corpo da requisição.
+
 <img src="https://github.com/MGustav0/desafio-gostack-database-relations/blob/master/extras/screenshots/01_-_createCustomer.png"/>
 
 ### Criar produtos
+
+> Cria-se um produto passando o nome, preço e quantidade no corpo da requisição.
 
 <img src="https://github.com/MGustav0/desafio-gostack-database-relations/blob/master/extras/screenshots/02_-_createProduct.png"/>
 
 ### Criar ordem de pedidos
 
+> Cria-se uma ordem de pedidos passando o id do cliente, os ids dos produtos e a quantidade no corpo da requisição.
+
 <img src="https://github.com/MGustav0/desafio-gostack-database-relations/blob/master/extras/screenshots/03_-_createOrder.png"/>
 
 ### Listar ordem de pedidos
+
+> Lista-se uma ordem de pedidos passando o id da ordem criada no parâmetro da URL da requisição (barra de endereços).
 
 <img src="https://github.com/MGustav0/desafio-gostack-database-relations/blob/master/extras/screenshots/04_-_listOrders.png"/>
 
