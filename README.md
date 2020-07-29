@@ -81,23 +81,19 @@ Resultados obtidos pelo [Insomnia](https://insomnia.rest/download/) um software 
 
 ### Criar clientes
 
-<img src=""/>
+<img src="https://github.com/MGustav0/desafio-gostack-database-relations/blob/master/extras/screenshots/01_-_createCustomer.png"/>
 
 ### Criar produtos
 
-<img src=""/>
+<img src="https://github.com/MGustav0/desafio-gostack-database-relations/blob/master/extras/screenshots/02_-_createProduct.png"/>
 
-### Listar produtos
+### Criar ordem de pedidos
 
-<img src=""/>
+<img src="https://github.com/MGustav0/desafio-gostack-database-relations/blob/master/extras/screenshots/03_-_createOrder.png"/>
 
-### Criar pedidos
+### Listar ordem de pedidos
 
-<img src=""/>
-
-### Listar pedidos
-
-<img src=""/>
+<img src="https://github.com/MGustav0/desafio-gostack-database-relations/blob/master/extras/screenshots/04_-_listOrders.png"/>
 
 ## :memo: Licença
 
