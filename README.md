@@ -14,7 +14,7 @@ Essa será uma aplicação que deve permitir a criação de clientes, produtos e
 
 ## Status do Projeto
 
-> Em desenvolvimento :warning:
+> Concluído :heavy_check_mark:
 
 ## Template da aplicação
 
